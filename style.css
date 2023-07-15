@@ -228,4 +228,8 @@ body {
   .dispositivos__lista li:not(:last-child) {
     margin-bottom: 1em;
   }
+
+  .container__imagem:first-child {
+    margin: 0 auto;
+  }
 }
