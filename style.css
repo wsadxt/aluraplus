@@ -3,7 +3,7 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BD7;
     --cor-fundo: #00030C;
-    --fonte-principal: 'Inter';    
+    --fonte-principal: 'Inter';
 }
 
 body {
@@ -196,5 +196,32 @@ body {
 
     .rodape {
         margin: 2em 1em;
+    }
+
+    /* Novas regras adicionadas para centralização */
+
+    .principal {
+        justify-content: center;
+    }
+
+    .container,
+    .secundario {
+        margin: 0;
+    }
+
+    .descricao__titulo,
+    .descricao__texto,
+    .dispositivos__titulo,
+    .lista__item,
+    .rodape__texto {
+        text-align: center;
+    }
+
+    .dispositivos__lista {
+        justify-content: center;
+    }
+
+    .rodape__lista {
+        justify-content: center;
     }
 }
