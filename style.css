@@ -95,16 +95,22 @@ body {
   margin-bottom: 0.5em;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .rodape {
+  background-color: var(--botao-azul);
+  color: var(--branco-principal);
+  padding: 3em;
   text-align: center;
-  padding: 2em;
 }
 
 .rodape__lista {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  margin-top: 1em;
+  padding: 1em 0;
 }
 
 .lista__link a {
@@ -120,7 +126,7 @@ body {
 }
 
 .lista__link a:hover {
-  color: var(--botao-azul);
+  color: var(--branco-principal);
 }
 
 @media (max-width: 768px) {
