@@ -217,19 +217,12 @@ body {
     text-align: center;
   }
 
-  .dispositivos__lista {
-    justify-content: center;
-  }
-
-  .rodape__lista {
-    justify-content: center;
-  }
-
   /* Modificações para dispositivos em coluna */
 
-  .dispositivos__lista li {
+  .dispositivos__lista {
     flex-direction: column;
     align-items: center;
+    margin: 1em 0;
   }
 
   .dispositivos__lista li:not(:last-child) {
