@@ -14,6 +14,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 .container {
@@ -27,29 +28,33 @@ body {
 }
 
 .container__titulo {
-  font-size: 28px;
+  font-size: calc(18px + 2vmin);
   font-weight: 700;
   margin-bottom: 1em;
 }
 
-.container__imagem {
+.container__imagem,
+.secundario__imagem {
   margin: 1em 0 2em 0;
   max-width: 100%;
+  height: auto;
 }
 
 .container__caixa {
   margin: 0 auto;
   text-align: center;
+  padding: 1em;
 }
 
-.container__botao {
+.container__botao,
+.secundario__botao {
   background-color: var(--botao-azul);
   border-radius: 5px;
   padding: 1em 2em;
   color: var(--branco-principal);
-  display: inline-block;
+  display: block;
   text-decoration: none;
-  margin-bottom: 1em;
+  margin: 0.5em auto;
 }
 
 .botao_secundario {
@@ -58,13 +63,13 @@ body {
 }
 
 .container__aviso {
-  font-size: 12px;
+  font-size: calc(10px + 0.5vmin);
   color: var(--cinza-secundario);
 }
 
 .descricao__titulo {
   font-weight: 700;
-  font-size: 48px;
+  font-size: calc(24px + 1vmin);
   color: var(--branco-principal);
   margin-bottom: 0.1em;
 }
@@ -74,27 +79,18 @@ body {
   margin-bottom: 2em;
 }
 
-.secundario__imagem {
-  max-width: 100%;
-}
-
-.secundario__botao {
-  display: inline-block;
-  margin-top: 1em;
-}
-
 .dispositivos {
   text-align: center;
 }
 
 .dispositivos__titulo {
-  font-size: 48px;
+  font-size: calc(24px + 1vmin);
   color: var(--branco-principal);
   margin-bottom: 1em;
 }
 
 .lista__item {
-  font-size: 32px;
+  font-size: calc(18px + 1vmin);
   color: var(--branco-principal);
   margin-bottom: 0.5em;
 }
@@ -120,7 +116,7 @@ body {
 .rodape__texto {
   margin: 1em 0;
   color: var(--cinza-secundario);
-  font-size: 14px;
+  font-size: calc(10px + 0.5vmin);
 }
 
 .lista__link a:hover {
@@ -131,25 +127,15 @@ body {
   .container {
     flex-direction: column;
     align-items: center;
+    padding: 1em;
   }
   
-  .container__caixa {
-    margin: 2em 0;
-  }
-  
-  .descricao__titulo {
-    font-size: 36px;
-  }
-  
-  .secundario__imagem {
-    max-width: 100%;
-  }
-  
+  .descricao__titulo,
   .dispositivos__titulo {
-    font-size: 36px;
+    font-size: calc(18px + 1vmin);
   }
   
   .lista__item {
-    font-size: 24px;
+    font-size: calc(16px + 1vmin);
   }
 }
