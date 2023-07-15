@@ -14,6 +14,7 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 .principal {
@@ -28,6 +29,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
+    overflow: auto;
 }
 
 .container__botao {
